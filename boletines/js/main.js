@@ -18,7 +18,7 @@
 //----------------------------------
 
 //Obtener los elementos dela clase .close
- let links = document.querySelectorAll(".close");
+let links = document.querySelectorAll(".close");
 //Recorrerlos
 links.forEach(function(link){
   //Agregar un evento click a cada uno de ellos
@@ -31,12 +31,9 @@ links.forEach(function(link){
       content.classList.add("fadeOutUp");
       content.classList.add("animated");
 
-      setTimeout(function(){
-      	location.href = "../index.html";
-      },600);
-
-
-      
+	      setTimeout(function(){
+	      	location.href = "../index.html";
+	      },600);
 
       return false;
   });
