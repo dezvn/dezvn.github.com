@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900');
+body{
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+}
+header.header{
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  padding: 30px;
+  top: 0;
+}
+
+header .menu{
+  float: right;
+}
+header img, ul.main-menu{
+  margin: 10px 0;
+}
+header ul.main-menu > li{
+  list-style: none;
+  display: inline;
+  margin-left: 25px;
+}
+header ul.main-menu > li a{
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #420B21;
+}
+.banner{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.banner .section-text{
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  padding: 200px 100px;
+  z-index: 4;
+}
+.banner .section-text .text-home{
+  font-weight: 700;
+  font-size: 3em;
+  text-transform:uppercase;
+  color: #000;
+
+}
+.banner .section-text .text-home span{
+  color: #B8DBD9;
+}
+.banner .section-text .subtitle{
+  font-weight: 700;
+  font-size: 4em;
+  text-transform:uppercase;
+  color: #B8DBD9;
+}
+.banner .section-text .subtitle span{
+  color: #000;
+}
+.banner .section-text .subtitle span.dot{
+  font-size: 1.5em;
+}
+.slope-middle{
+  position: absolute;
+  width: 80%;
+  height: 100px;
+  z-index: -1;
+}
+.proyectos{
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.proyectos ul.list-proyectos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.proyectos .list-proyectos > li{
+  list-style: none;
+  display: inline-block;
+
+}
+.proyectos .list-proyectos > li img{
+  max-width: 310px;
+  padding: 20px;
+}
