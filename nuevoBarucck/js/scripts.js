@@ -67,7 +67,9 @@ $(document).ready(function() {
   //  top:   e.pageY,
 //  });
 //});
-  
+
+//section slider
+
 		// Page transition
 		$('.transition').on('click', function(e) {
       	$('.transition-overlay').toggleClass("show-me");
