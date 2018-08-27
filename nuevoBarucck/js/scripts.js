@@ -68,7 +68,6 @@ $(document).ready(function() {
 		});
   //experience
 	'use strict';
-	// Abandon all hope ye who enter here
 	$(document).ready(function() {
 
 	  var navigating = false,
