@@ -26,7 +26,7 @@ ul li{ margin:0; padding:0; list-style:none;}
 p{ line-height:22px; margin-bottom:15px; color: #7d7d7d;}
 b{ font-weight:800;}
 u{ text-decoration:underline;}
-h1,h2,h3,h4,h5,h6, p, textarea{ font-family: 'Fjalla One', sans-serif, serif; }
+h2,h3,h4, p, textarea{ font-family: 'Fjalla One', sans-serif, serif; }
 
 
 
@@ -929,7 +929,7 @@ span.ver a:hover{
 }
 .section-nosotros{
 	width: 100%;
-	height: 100%;
+	height: 120%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -980,19 +980,16 @@ span.ver a:hover{
 }
 
 /*WEB TECNOLOGIAS*/
-.section-tecnologias{ width:100%; float:left; padding:50px 0; background:url(../img/parallax.jpg); background-position: center center; background-attachment: fixed; background-size: 100%;}
+.section-tecnologias{ width:100%;  padding:50px 0; background:url(../img/parallax.jpg); background-position: center center; background-attachment: fixed; background-size: 100%;}
 .section-tecnologias p{ line-height:24px; font-size:16px; opacity:0.6; font-weight:300; letter-spacing:1px;}
 .section-tecnologias h2{ color: #fff; text-align: center;}
 .section-tecnologias i{ font-size:40px; margin-bottom:30px; position:relative; display:block;}
-.section-tecnologias i:after{content:''; width:50px; height:1px; background:#ee3643; position:absolute; left:0; bottom:-10px;}
-.section-tecnologias i:before{ margin:0;}
 .section-tecnologias ul { text-align: center; padding: 50px;}
 .section-tecnologias ul li{ display: inline; margin-right: 100px; }
 @media (max-width: 465px){
   .section-tecnologias ul li{ display: block; margin-right: 0px; padding: 30px 0;}
 }
 .section-tecnologias ul li:last-of-type{margin-right: 0px; }
-.section-tecnologias .margin-bottom{ margin-bottom:40px;}
 /*CONTROL*/
 /*.fp-controlArrow{ border: none; padding: 20px; background-color: #fff; top: 25px; border-radius: 15px; font-weight: 700;s }*/
 .padding{
@@ -1027,6 +1024,7 @@ span.ver a:hover{
 .section-contacto form{
 	padding: 200px 80px;
 }
+
 .section-contacto form .subtitle{
    font-size: 5em;
 }
@@ -1091,4 +1089,27 @@ span.ver a:hover{
 
 #navigation {
   display: none;
+}
+
+@media (max-width: 980px){
+.section-contacto form{
+	padding: 50px 2px;
+ }
+ .step-form .step input, .step-form .step textarea {
+  
+  font-size: 2.5em;
+ 
+}
+
+}@media (max-width: 480px){
+.section-contacto form{
+	padding: 0px 0px;
+ }
+ .step-form .step input, .step-form .step textarea {
+  
+  font-size: 1.5em;
+  padding: 0;
+ 
+}
+
 }
