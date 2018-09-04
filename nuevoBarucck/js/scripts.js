@@ -47,25 +47,35 @@ $(document).ready(function() {
 		});
 
 		//hover
-		$("h3.hover").hover(function () {
+		// $("h3.hover").hover(function () {
 
-				$(".section .slide").css({
-					"transform": "scale(0.95)",
-				  "background": "#EFEFEF",
-				  "box-shadow": "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
-					"-webkit-box-shadow": "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
-					"-moz-box-shadow": "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
-					"-ms-box-shadow": "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)"
+		// 		$(".section .slide").css({
+		// 			"transform": "scale(0.95)",
+		// 		  "background": "#EFEFEF",
+		// 		  "box-shadow": "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
+		// 			"-webkit-box-shadow": "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
+		// 			"-moz-box-shadow": "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
+		// 			"-ms-box-shadow": "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)"
 
-				});
-		}, function(){
-			$(".section .slide").css({
-				"border-radius": "15px",
-				"transform": "scale(1)",
-				"transition": "all ease-in-out 0.7s"
-			});
+		// 		});
+		// }, function(){
+		// 	$(".section .slide").css({
+		// 		"border-radius": "15px",
+		// 		"transform": "scale(1)",
+		// 		"transition": "all ease-in-out 0.7s"
+		// 	});
 
-		});
+		// });
+		// 
+	
+	//change
+	
+   //regresar
+   
+     $(".regresar").on('click', function(event) {
+     	event.preventDefault();
+     	 window.history.back();
+     });
   //experience
 	'use strict';
 	$(document).ready(function() {

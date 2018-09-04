@@ -1,0 +1,174 @@
+
+/*DISEÑO*/
+.regresar{
+	position: fixed;
+	width: 5%;
+	height: 100vh;
+	z-index: 1001;
+	cursor: pointer;
+	transition: all 1s ease-in;
+	opacity: 0.4;
+    background: -webkit-linear-gradient(to right, rgba(0,0,0,0.6), rgba(255,255,255,0));  
+    background: -moz-linear-gradient(to right, rgba(0,0,0,0.6), rgba(255,255,255,0));  
+    background: -o-linear-gradient(to right, rgba(0,0,0,0.6), rgba(255,255,255,0));  
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(255,255,255,0));  
+  
+    -webkit-transition: opacity 1s ease-out;  
+    -moz-transition: opacity 1s ease-out;  
+    -o-transition: opacity 1s ease-out;  
+    transition: opacity 1s ease-out;  
+}
+
+.regresar:hover{
+	cursor: url("../img/back.png") pointer;
+	 background: -webkit-linear-gradient(to right, rgba(0,0,0,0.6), rgba(255,255,255,0));  
+	 background: -moz-linear-gradient(to right, rgba(0,0,0,0.6), rgba(255,255,255,0));  
+    background: -o-linear-gradient(to right, rgba(0,0,0,0.6), rgba(255,255,255,0));  
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(255,255,255,0));  
+    opacity: 1;
+}
+/*.text-regresar{
+    border: 1.5px solid #0E4749;
+	padding: 10px 35px;
+	bottom: 0px;
+	right: 100px;
+	font-size: 18px;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 2px;
+	transition: all 0.3s ease-in;
+}*/
+span.text-regresar:hover{
+	background-color: #0E4749;
+	color: #fff;
+}
+@media only screen and (min-width: 768px) {
+  .cd-header h1 {
+    font-size: 3.6rem;
+    font-weight: 300;
+  }
+}
+
+.main-diseño{
+	height: 100vh;
+}
+.cd-fixed-background {
+  display: none;
+  position: relative;
+  padding: 3em 5% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+.cd-fixed-background .cd-content::after {
+  /* phone image on small devices */
+  content: '';
+  display: block;
+  width: 100%;
+  padding: 60% 0;
+  margin: 2em auto 0;
+  height: 1000px;
+}
+.cd-fixed-background.img-1 {
+  background-color: #fff;
+}
+.cd-fixed-background.img-1 .cd-content::after {
+  background: url("../img/img-mobile-1.jpg") no-repeat;
+  background-size: 100% auto;
+}
+.cd-fixed-background.img-2 {
+  background-color: #fff;
+}
+.cd-fixed-background.img-2 .cd-content::after {
+  background: url("../img/img-mobile-2.jpg") no-repeat;
+  background-size: 100% auto;
+}
+.cd-fixed-background.img-3 {
+  background-color: #fff;
+}
+.cd-fixed-background.img-3 .cd-content::after {
+  background: url("../img/img-mobile-1.jpg") no-repeat;
+  background-size: 100% auto;
+}
+.cd-fixed-background.img-4 {
+  background-color: #fff;
+}
+.cd-fixed-background.img-4 .cd-content::after {
+  background: url("../img/img-mobile-2.jpg") no-repeat;
+  background-size: 100% auto;
+}
+@media only screen and (min-width: 768px) {
+  .cd-fixed-background {
+    height: 100%;
+    padding: 0;
+  }
+  .cd-fixed-background h2 {
+  	position: fixed;
+   color: #2B2B2B;
+    font-weight: 400;
+    font-size: 3em;
+    text-align: justify;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+
+  }
+   .cd-fixed-background p {
+     font-size: 1.5em;
+     color: #fff;
+
+  }
+
+  .cd-fixed-background .cd-content {
+    width: 50%;
+    position: absolute;
+    left: 35%;
+    top: 45%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .cd-fixed-background .cd-content::after {
+    display: none !important;
+  }
+  .cd-fixed-background.img-1 {
+    background-image: url("../img/web/cuore.jpg");
+  }
+  .cd-fixed-background.img-2 {
+    background-image: url("../img/web/ajparking.jpg");
+  }
+  .cd-fixed-background.img-3 {
+    background-image: url("../img/web/mida.jpg");
+  }
+   .cd-fixed-background.img-4 {
+    background-image: url("../img/web/inexplicable.jpg");
+  }
+  .cd-fixed-background.img-5 {
+    background-image: url("../img/web/granjita.jpg");
+  }
+ 
+}
+@media only screen and (min-width: 1048px) {
+  .cd-fixed-background {
+    background-attachment: fixed;
+  }
+  .cd-fixed-background .cd-content {
+    width: 80%;
+    left: 35%;
+  }
+}
+.background{
+  position: absolute;
+  z-index: 100;
+  height: 100vh;
+   background: -webkit-linear-gradient(to right, rgba(2,2,2,0.4), rgba(255,255,255,0));  
+    background: -moz-linear-gradient(to right, rgba(0,0,0,0.4), rgba(255,255,255,0));  
+    background: -o-linear-gradient(to right, rgba(0,0,0,0.4), rgba(255,255,255,0));  
+    background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(255,255,255,0));  
+  width: 50%;
+}

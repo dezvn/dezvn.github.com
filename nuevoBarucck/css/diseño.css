@@ -1,4 +1,47 @@
 
+/*DISEÑO*/
+.regresar{
+	position: fixed;
+	width: 10%;
+	height: 100vh;
+	z-index: 1001;
+	cursor: pointer;
+	transition: all 1s ease-in;
+	opacity: 0.4;
+    background: -webkit-linear-gradient(to right, rgba(0,0,0,0.6), rgba(255,255,255,0));  
+    background: -moz-linear-gradient(to right, rgba(0,0,0,0.6), rgba(255,255,255,0));  
+    background: -o-linear-gradient(to right, rgba(0,0,0,0.6), rgba(255,255,255,0));  
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(255,255,255,0));  
+  
+    -webkit-transition: opacity 1s ease-out;  
+    -moz-transition: opacity 1s ease-out;  
+    -o-transition: opacity 1s ease-out;  
+    transition: opacity 1s ease-out;  
+}
+
+.regresar:hover{
+	cursor: url("../img/back.png") pointer;
+	 background: -webkit-linear-gradient(to right, rgba(0,0,0,0.6), rgba(255,255,255,0));  
+	 background: -moz-linear-gradient(to right, rgba(0,0,0,0.6), rgba(255,255,255,0));  
+    background: -o-linear-gradient(to right, rgba(0,0,0,0.6), rgba(255,255,255,0));  
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(255,255,255,0));  
+    opacity: 1;
+}
+/*.text-regresar{
+    border: 1.5px solid #0E4749;
+	padding: 10px 35px;
+	bottom: 0px;
+	right: 100px;
+	font-size: 18px;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 2px;
+	transition: all 0.3s ease-in;
+}*/
+span.text-regresar:hover{
+	background-color: #0E4749;
+	color: #fff;
+}
 @media only screen and (min-width: 768px) {
   .cd-header h1 {
     font-size: 3.6rem;
@@ -6,7 +49,11 @@
   }
 }
 
+.main-diseño{
+	height: 100vh;
+}
 .cd-fixed-background {
+  display: none;
   position: relative;
   padding: 3em 5% 0;
   background-repeat: no-repeat;
@@ -22,6 +69,7 @@
   width: 100%;
   padding: 60% 0;
   margin: 2em auto 0;
+  height: 1000px;
 }
 .cd-fixed-background.img-1 {
   background-color: #fff;
@@ -57,13 +105,15 @@
     padding: 0;
   }
   .cd-fixed-background h2 {
-    font-size: 3.6rem;
-    font-weight: 300;
+  	position: fixed;
+   color: #2B2B2B;
+    font-weight: 400;
+    font-size: 3em;
+    text-align: justify;
+    line-height: 40px;
+    text-transform: uppercase;
   }
-  .cd-fixed-background p {
-    font-size: 1.8rem;
-    line-height: 1.8;
-  }
+
   .cd-fixed-background .cd-content {
     width: 50%;
     position: absolute;
@@ -87,6 +137,9 @@
   }
   .cd-fixed-background.img-3 {
     background-image: url("../img/diseño/portfolio2.jpg");
+  }
+   .cd-fixed-background.img-4 {
+    background-image: url("../img/diseño/portfolio.jpg");
   }
  
 }
